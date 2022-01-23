@@ -1,6 +1,11 @@
-import './polyfills';
-import React from 'react';
+import React, { StrictMode } from 'react';
 import ReactDom from 'react-dom';
 import App from './App';
+import './polyfills';
 
-ReactDom.render(<App />, document.getElementById('root'));
+ReactDom.render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+  document.getElementById('root')
+);
