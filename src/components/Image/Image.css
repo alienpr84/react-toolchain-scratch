@@ -1,0 +1,16 @@
+img {
+	height: 100%;
+	width: 100%;
+}
+
+figure {
+	background-color: gray;
+}
+
+figcaption {
+	background-color: #333;
+	border-radius: 3px;
+	color: white;
+	padding: 8px;
+	text-align: center;
+}
