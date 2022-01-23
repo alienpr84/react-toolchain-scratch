@@ -1,7 +1,7 @@
 import React from 'react';
 import './Modal.css';
 
-function Modal({ onClose = null }) {
+function Modal({ children, onClose = null }) {
 	const handleClose = () => {
 		if (onClose) {
 			onClose();
@@ -15,7 +15,7 @@ function Modal({ onClose = null }) {
 					<button className='button-close' onClick={handleClose}>
 						x
 					</button>
-					<div>Hola mundo</div>
+					<div>{children}</div>
 				</div>
 			</div>
 		</div>
